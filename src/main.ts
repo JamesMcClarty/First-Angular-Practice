@@ -1,4 +1,5 @@
 import{ Point } from './point'
+import{ Likes } from './likes'
 
 /*
 import { enableProdMode } from '@angular/core';
@@ -90,3 +91,11 @@ let point = new Point(1,2);
 let point2 = new Point();
 point2.x = 10;
 point.draw();
+
+// Likes Exercise
+
+const likes = new Likes(5, false);
+console.log(likes.numberOfLikes);
+likes.likeClick();
+console.log(likes.numberOfLikes);
+
