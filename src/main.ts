@@ -1,3 +1,5 @@
+import{ Point } from './point'
+
 /*
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -63,6 +65,7 @@ doLog;
 
 //Interfaces
 
+/*
 interface Point {
   x: number,
   y: number
@@ -76,5 +79,14 @@ drawPoint({
   x:1,
   y:2
 })
+*/
+
+//Classes and Access Modifiers
 
 
+// Objects
+
+let point = new Point(1,2);
+let point2 = new Point();
+point2.x = 10;
+point.draw();
