@@ -23,6 +23,7 @@ var message = 'Hello World';
 
 log(message);
 
+// Function
 function doSomething(){
   for (var i = 0; i<5; i++){
     console.log(i)
@@ -33,6 +34,7 @@ function doSomething(){
 
 doSomething();
 
+//variables and types
 let a: number;
 let b: boolean;
 let c: string;
@@ -46,3 +48,33 @@ const ColorBlue = 2;
 
 enum Color {Red = 0, Green = 1, Blue = 2, Purple = 3};
 let backgroundColor = Color.Red;
+
+//Type assertions
+
+message = 'abc';
+let endsWithC = (<string>message).endsWith('c');
+let alternative = (message as string).endsWith('c');
+
+//Arrow functions
+
+let doLog = (message) => console.log(message);
+
+doLog;
+
+//Interfaces
+
+interface Point {
+  x: number,
+  y: number
+}
+
+let drawPoint = (point: Point) => {
+  //..
+}
+
+drawPoint({
+  x:1,
+  y:2
+})
+
+
